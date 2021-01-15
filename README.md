@@ -22,7 +22,7 @@ npm i -D @dreipol/pandora
 - Install eslint in [your IDE](https://eslint.org/docs/user-guide/integrations)
 - Install prettier in [your IDE](https://prettier.io/docs/en/editors.html)
 
-# Eslint Usage
+# Eslint Setup
 
 Set up your eslint config (`.eslintrc.js`) file as follows to enable the `@dreipol/pandora` eslint rules in your project
 
@@ -32,7 +32,7 @@ module.exports = {
 }
 ```
 
-# Prettier Usage
+# Prettier Setup
 
 Set up your prettier config (`.prettierrc.js`) file as follows to enable the `@dreipol/pandora` prettier rules in your project
 
@@ -41,3 +41,18 @@ const { prettier } = require('@dreipol/pandora')
 
 module.exports = prettier
 ```
+
+
+# Vue Setup
+
+## Installation
+
+For Vue Project we need to install one additional plugin `eslint-plugin-vue`
+
+```shell`
+npm i eslint-plugin-vue@7
+``
+
+## Eslint Setup
+
+## Prettier Setup

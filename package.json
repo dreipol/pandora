@@ -8,7 +8,8 @@
   },
   "files": [
     ".eslintrc.js",
-    ".prettierrc.js"
+    ".prettierrc.js",
+    "vue"
   ],
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.22.1",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "eslint-plugin-vue": "^7.4.1"
   },
   "author": "Gianluca Guarini <gianluca.guarini@gmail.com> (http://gianlucaguarini.com)",
   "license": "MIT",
