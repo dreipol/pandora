@@ -1,6 +1,4 @@
-const { prettier } = require('../')
-
 module.exports = {
-  ...prettier,
+  ...require('../.prettierrc.js'),
   vueIndentScriptAndStyle: true,
 }
