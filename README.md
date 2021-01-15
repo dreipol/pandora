@@ -55,4 +55,23 @@ npm i eslint-plugin-vue@7
 
 ## Eslint Setup
 
+To enable the Vue.js linting you should add the following extension to your eslint config (`.eslintrc.js`) file:
+
+```diff
+module.exports = {
+  extends: [
+    '@dreipol/pandora', 
++   '@dreipol/pandora/vue'
+  ]
+}
+```
+
 ## Prettier Setup
+
+To let prettier format your Vue.js files you can simply setup your prettier config (`.prettierrc.js`) file as follows
+
+```js
+const { prettierVue } = require('@dreipol/pandora')
+
+module.exports = prettierVue
+```
