@@ -49,9 +49,9 @@ module.exports = prettier
 
 For Vue Project we need to install one additional plugin `eslint-plugin-vue`
 
-```shell`
+```shell
 npm i eslint-plugin-vue@7
-``
+```
 
 ## Eslint Setup
 
