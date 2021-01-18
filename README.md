@@ -28,7 +28,7 @@ Set up your eslint config (`.eslintrc.js`) file as follows to enable the `@dreip
 
 ```js
 module.exports = {
-  extends: ['@dreipol/pandora']
+  extends: [require.resolve('@dreipol/pandora/.eslintrc')]
 }
 ```
 
@@ -60,8 +60,8 @@ To enable the Vue.js linting you should add the following extension to your esli
 ```diff
 module.exports = {
   extends: [
-    '@dreipol/pandora', 
-+   '@dreipol/pandora/vue'
+    require.resolve('@dreipol/pandora/.eslintrc'), 
++   require.resolve('@dreipol/pandora/vue/.eslintrc')
   ]
 }
 ```
