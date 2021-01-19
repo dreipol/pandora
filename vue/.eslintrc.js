@@ -19,31 +19,6 @@ module.exports = {
         ],
       },
     ],
-    'vue/html-closing-bracket-newline': [
-      'error',
-      {
-        singleline: 'never',
-        multiline: 'never',
-      },
-    ],
-    'vue/html-closing-bracket-spacing': [
-      'warn',
-      {
-        startTag: 'never',
-        endTag: 'never',
-        selfClosingTag: 'never',
-      },
-    ],
-    'vue/max-attributes-per-line': [
-      'error',
-      {
-        singleline: 3,
-        multiline: {
-          max: 1,
-          allowFirstLine: true,
-        },
-      },
-    ],
     'vue/order-in-components': [
       'error',
       {
