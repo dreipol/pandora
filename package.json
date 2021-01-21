@@ -1,6 +1,6 @@
 {
   "name": "@dreipol/pandora",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "All dreipol eslint and prettier rules to build any kind of project",
   "main": "index.js",
   "scripts": {
