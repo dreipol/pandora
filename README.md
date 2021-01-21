@@ -75,3 +75,20 @@ const { prettierVue } = require('@dreipol/pandora')
 
 module.exports = prettierVue
 ```
+
+# Stylelint Setup
+
+## Stylelint BEM Patterns Config
+dreipol stylelint config file for bem selectors
+
+```shell
+npm i stylelint-selector-bem-pattern@2
+```
+
+Set up your stylelint config (`.stylelintrc.js`) file as follows to enable the `@dreipol/pandora` eslint rules in your project
+
+```js
+module.exports = {
+  extends: [require.resolve('@dreipol/pandora/stylelint/config-bem-pattern/.stylelintrc')]
+}
+```
