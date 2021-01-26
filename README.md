@@ -84,6 +84,11 @@ module.exports = prettierVue
 npm i stylelint@13
 ```
 
+## Stylelint SCSS Config
+
+```shell
+npm i stylelint-scss@3
+```
 
 ## Stylelint BEM Patterns Config
 dreipol stylelint config file for bem selectors
@@ -97,9 +102,8 @@ Set up your stylelint config (`.stylelintrc.js`) file as follows to enable the `
 
 ```js
 module.exports = {
-  extends: [require.resolve('@dreipol/pandora/stylelint/config-base/.stylelintrc')]
-}
-module.exports = {
+  extends: [require.resolve('@dreipol/pandora/stylelint/config-base/.stylelintrc')],
+  extends: [require.resolve('@dreipol/pandora/stylelint/config-scss/.stylelintrc')],
   extends: [require.resolve('@dreipol/pandora/stylelint/config-bem-pattern/.stylelintrc')]
 }
 ```
