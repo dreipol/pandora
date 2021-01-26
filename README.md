@@ -79,12 +79,14 @@ module.exports = prettierVue
 # Stylelint Setup
 
 ## Stylelint Config
+dreipol stylelint config file
 
 ```shell
 npm i stylelint@13
 ```
 
 ## Stylelint SCSS Config
+dreipol stylelint config for the scss files
 
 ```shell
 npm i stylelint-scss@3
@@ -97,6 +99,13 @@ dreipol stylelint config file for bem selectors
 npm i stylelint-selector-bem-pattern@2
 ```
 
+## Stylelint Order Config
+dreipol stylelint config for the stylelint-order plugin
+
+```shell
+npm i stylelint-order@4
+```
+
 ## Setup in Project
 Set up your stylelint config (`.stylelintrc.js`) file as follows to enable the `@dreipol/pandora` eslint rules in your project
 
@@ -104,6 +113,7 @@ Set up your stylelint config (`.stylelintrc.js`) file as follows to enable the `
 module.exports = {
   extends: [require.resolve('@dreipol/pandora/stylelint/config-base/.stylelintrc')],
   extends: [require.resolve('@dreipol/pandora/stylelint/config-scss/.stylelintrc')],
-  extends: [require.resolve('@dreipol/pandora/stylelint/config-bem-pattern/.stylelintrc')]
+  extends: [require.resolve('@dreipol/pandora/stylelint/config-bem-pattern/.stylelintrc')],
+  extends: [require.resolve('@dreipol/pandora/stylelint/config-order/.stylelintrc')]
 }
 ```
