@@ -78,6 +78,13 @@ module.exports = prettierVue
 
 # Stylelint Setup
 
+## Stylelint Config
+
+```shell
+npm i stylelint-config@13
+```
+
+
 ## Stylelint BEM Patterns Config
 dreipol stylelint config file for bem selectors
 

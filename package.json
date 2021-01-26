@@ -28,7 +28,8 @@
     "eslint-plugin-import": "^2.22.1",
     "prettier": "^2.2.1",
     "eslint-plugin-vue": "^7.4.1",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "stylelint": "^13.7.2"
   },
   "author": "Gianluca Guarini <gianluca.guarini@gmail.com> (http://gianlucaguarini.com)",
   "license": "MIT",

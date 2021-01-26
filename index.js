@@ -8,5 +8,6 @@ module.exports.prettierVue = require('./vue/.prettierrc.js')
 
 // Stylelint rules
 module.exports.stylelint = {
+  base: require('./stylelint/config-base/.stylelintrc.js'),
   bemPattern: require('./stylelint/config-bem-pattern/.stylelintrc.js'),
 }
