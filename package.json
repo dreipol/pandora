@@ -33,7 +33,7 @@
     "stylelint-scss": "^3.14.2",
     "stylelint-order": "^4.0.0"
   },
-  "author": "Gianluca Guarini <gianluca.guarini@gmail.com> (http://gianlucaguarini.com)",
+  "author": "dreipol <dev@dreipol.ch> (http://dreipol.ch)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dreipol/pandora/issues"
