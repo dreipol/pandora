@@ -28,9 +28,12 @@
     "eslint-plugin-import": "^2.22.1",
     "prettier": "^2.2.1",
     "eslint-plugin-vue": "^7.4.1",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "stylelint": "^13.7.2",
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "stylelint-scss": "^3.14.2",
+    "stylelint-order": "^4.0.0"
   },
-  "author": "Gianluca Guarini <gianluca.guarini@gmail.com> (http://gianlucaguarini.com)",
+  "author": "dreipol <dev@dreipol.ch> (http://dreipol.ch)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dreipol/pandora/issues"
