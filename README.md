@@ -71,7 +71,7 @@ module.exports = {
 To let prettier format your Vue.js files you can simply setup your prettier config (`.prettierrc.js`) file as follows
 
 ```js
-const { pettier } = require('@dreipol/pandora')
+const { prettier } = require('@dreipol/pandora')
 
 module.exports = prettier.vue
 ```
