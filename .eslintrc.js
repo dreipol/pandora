@@ -8,7 +8,7 @@ module.exports = {
     },
   },
   plugins: ['fp', 'prettier'],
-  extends: ['airbnb-base', 'prettier'],
+  extends: ['airbnb-base', 'plugin:prettier/recommended'],
   rules: {
     'prettier/prettier': 'error',
     'fp/no-class': 'error',
