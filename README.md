@@ -11,7 +11,7 @@ Notice that all the `@dreipol/pandora` peer dependencies should be installed man
 npm i -D eslint@7 prettier@2
 
 # Install the plugins used in @dreipol/pandora
-npm i -D eslint-config-airbnb-base@14 eslint-config-prettier@7 eslint-plugin-fp@2 eslint-plugin-import@2
+npm i -D eslint-config-airbnb-base@14 eslint-plugin-prettier@3 eslint-config-prettier@7 eslint-plugin-fp@2 eslint-plugin-import@2
 
 # Install @dreipol/pandora
 npm i -D @dreipol/pandora
@@ -82,11 +82,11 @@ module.exports = prettier.vue
 Make sure to have Stylelint installed in your project before proceeding with the following steps
 
 ```shell
-npm i stylelint@13
+npm i stylelint@13 stylelint-prettier@1 stylelint-config-prettier@8
 ```
 
 ### Stylelint Basic Rules Config
-In case you want to use only the basic pandora stylelint rules in your project you can setup your `.stylelintrc.js` file as follows
+To use only the basic pandora stylelint rules in your project you can set up your `.stylelintrc.js` file as follows
 
 ```js
 module.exports = {

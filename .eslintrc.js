@@ -7,13 +7,10 @@ module.exports = {
       impliedStrict: true,
     },
   },
-  env: {
-    browser: true,
-    es6: true,
-  },
-  plugins: ['fp'],
+  plugins: ['fp', 'prettier'],
   extends: ['airbnb-base', 'prettier'],
   rules: {
+    'prettier/prettier': 'error',
     'fp/no-class': 'error',
     'fp/no-delete': 'error',
     'fp/no-get-set': 'error',
