@@ -13,7 +13,7 @@ module.exports = {
           'OTHER_DIRECTIVES',
           'GLOBAL',
           'UNIQUE',
-          'BINDING',
+          'TWO_WAY_BINDING',
           'EVENTS',
           'CONTENT',
         ],
