@@ -10,6 +10,7 @@ module.exports = {
   plugins: ['fp', 'prettier'],
   extends: ['airbnb-base', 'plugin:prettier/recommended'],
   rules: {
+    'no-param-reassign': ['error', { 'props': false }],
     'fp/no-class': 'error',
     'fp/no-delete': 'error',
     'fp/no-get-set': 'error',
