@@ -12,7 +12,7 @@ const areAllLintResultsValid = (result) => {
   return result.every(isLintResultValid)
 }
 
-test('Self-test', async (assert) => {
+test('Self-lint', async (assert) => {
   const eslint = new ESLint({
     baseConfig: {
       extends: [api.eslint.base],
@@ -35,7 +35,7 @@ test('Self-test', async (assert) => {
 test('ESLint JS config', async (assert) => {
   const eslintVue = new ESLint({
     baseConfig: {
-      extends: [api.eslint.base, api.eslint.vue],
+      extends: [api.eslint.base],
     },
   })
   const [validResult, invalidResult] = await eslintVue.lintFiles([
