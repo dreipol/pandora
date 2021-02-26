@@ -1,6 +1,6 @@
 # pandora
-This repo contains all dreipol eslint and prettier rules to build any kind of project
 
+This repo contains all dreipol eslint and prettier rules to build any kind of project
 
 # Installation
 
@@ -27,8 +27,10 @@ npm i -D @dreipol/pandora
 Set up your eslint config (`.eslintrc.js`) file as follows to enable the `@dreipol/pandora` eslint rules in your project
 
 ```js
+const { eslint } = require('@dreipol/pandora')
+
 module.exports = {
-  extends: [require.resolve('@dreipol/pandora/.eslintrc')]
+  extends: [eslint.base],
 }
 ```
 
@@ -41,7 +43,6 @@ const { prettier } = require('@dreipol/pandora')
 
 module.exports = prettier.base
 ```
-
 
 # Vue Setup
 
@@ -58,11 +59,10 @@ npm i eslint-plugin-vue@7
 To enable the Vue.js linting you should add the following extension to your eslint config (`.eslintrc.js`) file:
 
 ```diff
+const { eslint } = require('@dreipol/pandora')
+
 module.exports = {
-  extends: [
-    require.resolve('@dreipol/pandora/.eslintrc'), 
-+   require.resolve('@dreipol/pandora/vue/.eslintrc')
-  ]
+  extends: [eslint.base, eslint.vue],
 }
 ```
 
@@ -79,6 +79,7 @@ module.exports = prettier.vue
 # Stylelint Setup
 
 ## Stylelint Installation
+
 Make sure to have Stylelint installed in your project before proceeding with the following steps
 
 ```shell
@@ -86,17 +87,20 @@ npm i stylelint@13 stylelint-prettier@1 stylelint-config-prettier@8
 ```
 
 ### Stylelint Basic Rules Config
+
 To use only the basic pandora stylelint rules in your project you can set up your `.stylelintrc.js` file as follows
 
 ```js
+const { stylelint } = require('@dreipol/pandora')
+
 module.exports = {
-  extends: [require.resolve('@dreipol/pandora/stylelint/config-base/.stylelintrc')],
+  extends: [stylelint.base],
 }
 ```
 
-
 ### Stylelint SCSS Config
-Does your project use SCSS files? No problems... you can enable the pandora stylelint rules for scss. 
+
+Does your project use SCSS files? No problems... you can enable the pandora stylelint rules for scss.
 First you need to install the `stylelint-scss` dependency
 
 ```shell
@@ -106,15 +110,18 @@ npm i stylelint-scss@3
 You can then update your `.stylelintrc.js` file as follows
 
 ```diff
+const { stylelint } = require('@dreipol/pandora')
+
 module.exports = {
   extends: [
-    require.resolve('@dreipol/pandora/stylelint/config-base/.stylelintrc')
-+   require.resolve('@dreipol/pandora/stylelint/config-scss/.stylelintrc'),
+    stylelint.base,
++   stylelint.scss,
   ],
 }
 ```
 
 ### Stylelint BEM Patterns Config
+
 To make sure your classes will be properly named according to [BEM](http://getbem.com/), you might enable the pandora bem pattern plugin.
 First you need to install `stylelint-selector-bem-pattern`
 
@@ -125,16 +132,19 @@ npm i stylelint-selector-bem-pattern@2
 You can then update your `.stylelintrc.js` file as follows
 
 ```diff
+const { stylelint } = require('@dreipol/pandora')
+
 module.exports = {
   extends: [
-    require.resolve('@dreipol/pandora/stylelint/config-base/.stylelintrc')
-    require.resolve('@dreipol/pandora/stylelint/config-scss/.stylelintrc'),
-+   require.resolve('@dreipol/pandora/stylelint/config-bem-pattern/.stylelintrc')
+    stylelint.base,
+    stylelint.scss,
++   stylelint.bemPattern,
   ],
 }
 ```
 
 ### Stylelint Order Config
+
 Do you care about the order of your css properties? In that case the pandora `stylelint/config-order` is what you are looking for.
 First install `stylelint-order`
 
@@ -145,12 +155,14 @@ npm i stylelint-order@4
 Then update your `.stylelintrc.js` file as follows
 
 ```diff
+const { stylelint } = require('@dreipol/pandora')
+
 module.exports = {
   extends: [
-    require.resolve('@dreipol/pandora/stylelint/config-base/.stylelintrc')
-    require.resolve('@dreipol/pandora/stylelint/config-scss/.stylelintrc'),
-    require.resolve('@dreipol/pandora/stylelint/config-bem-pattern/.stylelintrc'),
-+   require.resolve('@dreipol/pandora/stylelint/config-order/.stylelintrc')
+    stylelint.base,
+    stylelint.scss,
+    stylelint.bemPattern,
++   stylelint.order,
   ],
 }
 ```
