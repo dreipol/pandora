@@ -16,7 +16,7 @@
   "files": [
     "index.js",
     "prettier",
-    "eslint-config",
+    "eslint",
     "stylelint",
     "LICENSE"
   ],
