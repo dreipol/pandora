@@ -3,13 +3,22 @@
   "version": "0.3.3",
   "description": "All dreipol eslint and prettier rules to build any kind of project",
   "main": "index.js",
+  "engines": {
+    "npm": ">=7",
+    "node": ">=14"
+  },
   "scripts": {
-    "test": "node tests/run.js"
+    "check-format": "prettier --check \"./**/*.js\"",
+    "lint": "eslint ./",
+    "all-tests": "node tests/run.js",
+    "test": "npm run check-format && npm run lint && npm run all-tests"
   },
   "files": [
-    "*.js",
-    "vue",
-    "stylelint"
+    "index.js",
+    "prettier",
+    "eslint-config",
+    "stylelint",
+    "LICENSE"
   ],
   "repository": {
     "type": "git",
@@ -18,6 +27,10 @@
   "keywords": [
     "eslint",
     "prettier",
+    "stylelint",
+    "lint",
+    "format",
+    "config",
     "dreipol"
   ],
   "peerDependencies": {
