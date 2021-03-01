@@ -1,17 +1,13 @@
-const eslintBase = require.resolve('./.eslintrc.js')
-const eslintVue = require.resolve('./vue/.eslintrc.js')
+const eslintBase = require.resolve('./eslint/eslint-base')
+const eslintVue = require.resolve('./eslint/eslint-vue')
 
-const prettierBase = require('./.prettierrc.js')
-const prettierVue = require('./vue/.prettierrc.js')
+const prettierBase = require('./prettier/prettier-base')
+const prettierVue = require('./prettier/prettier-vue')
 
-const stylelintBase = require.resolve('./stylelint/config-base/.stylelintrc.js')
-const stylelintScss = require.resolve('./stylelint/config-scss/.stylelintrc.js')
-const stylelintBemPattern = require.resolve(
-  './stylelint/config-bem-pattern/.stylelintrc.js',
-)
-const stylelintOrder = require.resolve(
-  './stylelint/config-order/.stylelintrc.js',
-)
+const stylelintBase = require.resolve('./stylelint/stylelint-base')
+const stylelintScss = require.resolve('./stylelint/stylelint-scss')
+const stylelintBemPattern = require.resolve('./stylelint/stylelint-bem-pattern')
+const stylelintOrder = require.resolve('./stylelint/stylelint-order')
 
 // Eslint rules
 module.exports.eslint = {

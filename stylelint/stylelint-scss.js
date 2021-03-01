@@ -15,7 +15,7 @@ module.exports = {
     'scss/at-extend-no-missing-placeholder': true,
 
     // `@`-function
-    //'scss/at-function-named-arguments': 'always',
+    // 'scss/at-function-named-arguments': 'always',
     'scss/at-function-parentheses-space-before': 'never',
     'scss/at-function-pattern': publicNamePattern,
 
@@ -26,11 +26,11 @@ module.exports = {
     // `@`-import
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension-blacklist': ['scss'],
-    //'scss/at-import-partial-extension-whitelist': [],
+    // 'scss/at-import-partial-extension-whitelist': [],
 
     // `@`-mixin
     'scss/at-mixin-argumentless-call-parentheses': 'never',
-    //'scss/at-mixin-named-arguments': 'never',
+    // 'scss/at-mixin-named-arguments': 'never',
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-mixin-pattern': publicNamePattern,
 
@@ -38,11 +38,11 @@ module.exports = {
     'scss/at-rule-no-unknown': true,
 
     // `$`-variable
-    //'scss/dollar-variable-colon-newline-after': 'never',
+    // 'scss/dollar-variable-colon-newline-after': 'never',
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-colon-space-before': 'never',
-    //'scss/dollar-variable-default': null,
-    //'scss/dollar-variable-empty-line-before': 'never',
+    // 'scss/dollar-variable-default': null,
+    // 'scss/dollar-variable-empty-line-before': 'never',
     'scss/dollar-variable-no-missing-interpolation': true,
     'scss/dollar-variable-pattern': privateNamePattern,
 
@@ -50,12 +50,12 @@ module.exports = {
     'scss/percent-placeholder-pattern': publicNamePattern,
 
     // `//`-comment
-    //'scss/double-slash-comment-empty-line-before': 'never',
-    //'scss/double-slash-comment-inline': 'never',
-    //'scss/double-slash-comment-whitespace-inside': 'never',
+    // 'scss/double-slash-comment-empty-line-before': 'never',
+    // 'scss/double-slash-comment-inline': 'never',
+    // 'scss/double-slash-comment-whitespace-inside': 'never',
 
     // Declaration
-    //'scss/declaration-nested-properties': 'never',
+    // 'scss/declaration-nested-properties': 'never',
     'scss/declaration-nested-properties-no-divided-groups': true,
 
     // Media feature
@@ -67,14 +67,14 @@ module.exports = {
     'scss/operator-no-unspaced': true,
 
     // Partial
-    //'scss/partial-no-import': true,
+    // 'scss/partial-no-import': true,
 
     // Selector
-    //'selector-nest-combinators': 'always',
-    //'scss/selector-no-redundant-nesting-selector': true,
+    // 'selector-nest-combinators': 'always',
+    // 'scss/selector-no-redundant-nesting-selector': true,
 
     // General / Sheet
-    //'scss/no-dollar-variables': 'always',
+    // 'scss/no-dollar-variables': 'always',
     'scss/no-duplicate-dollar-variables': [
       true,
       {
