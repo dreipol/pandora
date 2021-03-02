@@ -51,7 +51,7 @@ module.exports = prettier.base
 For Vue Project we need to install one additional plugin `eslint-plugin-vue`
 
 ```shell
-npm i eslint-plugin-vue@7
+npm i -D eslint-plugin-vue@7
 ```
 
 ## Eslint Setup
@@ -74,6 +74,28 @@ To let prettier format your Vue.js files you can simply setup your prettier conf
 const { prettier } = require('@dreipol/pandora')
 
 module.exports = prettier.vue
+```
+
+# React Setup
+
+## Installation
+
+For React projects we need to install the following two dependencies:
+
+```shell
+npm i -D eslint-plugin-react eslint-plugin-react-hooks
+```
+
+## Eslint Setup
+
+To enable linting for React/JSX files, you should add the following extension to your eslint config (`.eslintrc.js`) file:
+
+```diff
+const { eslint } = require('@dreipol/pandora')
+
+module.exports = {
+  extends: [eslint.base, eslint.react],
+}
 ```
 
 # Stylelint Setup
