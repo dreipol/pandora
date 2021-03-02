@@ -10,7 +10,7 @@
   "scripts": {
     "check-format": "prettier --check \"./**/*.js\"",
     "lint": "eslint ./",
-    "all-tests": "node tests/run.js",
+    "all-tests": "tape tests/**/*.test.js",
     "test": "npm run check-format && npm run lint && npm run all-tests"
   },
   "files": [
