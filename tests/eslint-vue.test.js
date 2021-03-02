@@ -25,7 +25,7 @@ test('ESLint Vue config', async (assert) => {
   assert.deepEqual(
     [isLintResultValid(validResult), isLintResultValid(invalidResult)],
     [true, false],
-    'Validates vue components against the config.',
+    'Validates Vue components against the config.',
   )
   assert.end()
 })
