@@ -7,7 +7,7 @@ module.exports = {
       impliedStrict: true,
     },
   },
-  plugins: ['fp', 'prettier'],
+  plugins: ['fp'],
   extends: ['airbnb-base', 'plugin:prettier/recommended'],
   rules: {
     'no-param-reassign': ['error', { props: false }],

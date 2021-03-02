@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:vue/recommended', 'prettier/vue'],
+  extends: ['plugin:vue/recommended'],
   rules: {
     'vue/attributes-order': [
       'error',
