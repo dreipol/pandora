@@ -1,6 +1,14 @@
 # pandora
 
+<img src="https://raw.githubusercontent.com/dreipol/pandora/main/logo.png" width="50%"/>
+
 This repo contains all dreipol eslint and prettier rules to build any kind of project
+
+[![Build Status][ci-image]][ci-url]
+[![Code quality][codeclimate-image]][codeclimate-url]
+[![NPM version][npm-version-image]][npm-url]
+[![NPM downloads][npm-downloads-image]][npm-url]
+[![MIT License][license-image]][license-url]
 
 # Installation
 
@@ -188,3 +196,13 @@ module.exports = {
   ],
 }
 ```
+
+[ci-image]:https://img.shields.io/github/workflow/status/dreipol/pandora/test?style=flat-square&branch=main
+[ci-url]:https://github.com/dreipol/pandora/actions
+[license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
+[license-url]: LICENSE
+[npm-version-image]: http://img.shields.io/npm/v/@dreipol/pandora.svg?style=flat-square
+[npm-downloads-image]: http://img.shields.io/npm/dm/@dreipol/pandora.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@dreipol/pandora
+[codeclimate-image]: https://api.codeclimate.com/v1/badges/9b0baa585855a19c09a1/maintainability
+[codeclimate-url]: https://codeclimate.com/github/dreipol/pandora/maintainability
