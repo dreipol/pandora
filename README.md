@@ -2,13 +2,13 @@
 
 <img src="https://raw.githubusercontent.com/dreipol/pandora/main/logo.png" width="50%"/>
 
-This repo contains all dreipol eslint and prettier rules to build any kind of project
-
 [![Build Status][ci-image]][ci-url]
 [![Code quality][codeclimate-image]][codeclimate-url]
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
 [![MIT License][license-image]][license-url]
+
+Opinionated set of eslint and prettier rules
 
 # Installation
 
