@@ -83,7 +83,7 @@ module.exports = prettier.vue
 For React projects we need to install the following two dependencies:
 
 ```shell
-npm i -D eslint-plugin-react eslint-plugin-react-hooks
+npm i -D eslint-plugin-react@7 eslint-plugin-react-hooks@4
 ```
 
 ## Eslint Setup
