@@ -23,7 +23,7 @@ test('Prettier Vue config', async (assert) => {
   assert.deepEqual(
     [prettierOkOnValidVue, prettierOkOnInvalidVue],
     [true, false],
-    'Detects unformatted vue components.',
+    'Detects unformatted Vue components.',
   )
   assert.end()
 })
