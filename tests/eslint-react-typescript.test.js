@@ -6,7 +6,7 @@ const api = require('../index')
 const isLintResultValid = ({ errorCount, warningCount }) =>
   errorCount === 0 && warningCount === 0
 
-test('ESLint JS config', async (assert) => {
+test('ESLint Typescript React config', async (assert) => {
   const eslint = new ESLint({
     ignore: false,
     overrideConfig: {
