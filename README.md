@@ -19,7 +19,7 @@ Notice that all the `@dreipol/pandora` peer dependencies should be installed man
 npm i -D eslint@7 prettier@2
 
 # Install the plugins used in @dreipol/pandora
-npm i -D eslint-config-airbnb-base@14 eslint-plugin-prettier@3 eslint-config-prettier@8 eslint-plugin-fp@2 eslint-plugin-import@
+npm i -D eslint-config-airbnb-base@14 eslint-plugin-prettier@3 eslint-config-prettier@8 eslint-plugin-fp@2 eslint-plugin-import@2
 
 # Install @dreipol/pandora
 npm i -D @dreipol/pandora
