@@ -1,5 +1,7 @@
 const eslintBase = require.resolve('./eslint/eslint-base')
+const eslintTypescript = require.resolve('./eslint/eslint-typescript')
 const eslintVue = require.resolve('./eslint/eslint-vue')
+const eslintVueTypescript = require.resolve('./eslint/eslint-vue-typescript')
 const eslintReact = require.resolve('./eslint/eslint-react')
 
 const prettierBase = require('./prettier/prettier-base')
@@ -15,6 +17,8 @@ module.exports.eslint = {
   base: eslintBase,
   vue: eslintVue,
   react: eslintReact,
+  typescript: eslintTypescript,
+  vueTypescript: eslintVueTypescript,
 }
 
 // Stylelint rules

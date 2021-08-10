@@ -25,6 +25,14 @@ npm i -D eslint-config-airbnb-base@14 eslint-plugin-prettier@3 eslint-config-pre
 npm i -D @dreipol/pandora
 ```
 
+For Typescript support
+
+```shell
+npm i -D typescript@4 @typescript-eslint/eslint-plugin@4 @typescript-eslint/parser@4
+```
+
+These plugins assume a `tsconfig.json` file in your project root ([Docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)).
+
 ## Optional IDE Configuration
 
 - Install eslint in [your IDE](https://eslint.org/docs/user-guide/integrations)
@@ -39,6 +47,16 @@ const { eslint } = require('@dreipol/pandora')
 
 module.exports = {
   extends: [eslint.base],
+}
+```
+
+To enable Typescript support, simply add the `eslint.typescript` settings to the extension list
+
+```js
+const { eslint } = require('@dreipol/pandora')
+
+module.exports = {
+  extends: [eslint.base, eslint.typescript],
 }
 ```
 
@@ -74,6 +92,27 @@ module.exports = {
 }
 ```
 
+If you need Typescript support in your Vue components, you can add the following ESLint plugin
+
+```shell
+npm i -D @vue/eslint-config-typescript@7
+```
+
+Now, enable Vue Typescript support in your eslint config
+
+```diff
+const { eslint } = require('@dreipol/pandora')
+
+module.exports = {
+  extends: [
+    api.eslint.base,
+    api.eslint.typescript,
+    api.eslint.vue,
+    api.eslint.vueTypescript,
+  ]
+}
+```
+
 ## Prettier Setup
 
 To let prettier format your Vue.js files you can simply setup your prettier config (`.prettierrc.js`) file as follows
@@ -103,6 +142,16 @@ const { eslint } = require('@dreipol/pandora')
 
 module.exports = {
   extends: [eslint.base, eslint.react],
+}
+```
+
+You don't need any specific plugins for Typescript support with React, just enable both configs in your `.eslintrc.js`.
+
+```diff
+const { eslint } = require('@dreipol/pandora')
+
+module.exports = {
+  extends: [eslint.base, eslint.react, eslint.typescript],
 }
 ```
 
@@ -197,8 +246,8 @@ module.exports = {
 }
 ```
 
-[ci-image]:https://img.shields.io/github/workflow/status/dreipol/pandora/test?style=flat-square&branch=main
-[ci-url]:https://github.com/dreipol/pandora/actions
+[ci-image]: https://img.shields.io/github/workflow/status/dreipol/pandora/test?style=flat-square&branch=main
+[ci-url]: https://github.com/dreipol/pandora/actions
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
 [license-url]: LICENSE
 [npm-version-image]: http://img.shields.io/npm/v/@dreipol/pandora.svg?style=flat-square
