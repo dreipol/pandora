@@ -4,6 +4,7 @@ const privateNamePattern = `^[_]?${namePattern}`
 
 module.exports = {
   plugins: ['stylelint-scss'],
+  customSyntax: 'postcss-scss',
   rules: {
     // `@`-else
     'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',

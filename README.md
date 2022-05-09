@@ -16,10 +16,10 @@ Notice that all the `@dreipol/pandora` peer dependencies should be installed man
 
 ```shell
 # Install the linting tools
-npm i -D eslint@7 prettier@2
+npm i -D eslint@8 prettier@2
 
 # Install the plugins used in @dreipol/pandora
-npm i -D eslint-config-airbnb-base@14 eslint-plugin-prettier@3 eslint-config-prettier@8 eslint-plugin-fp@2 eslint-plugin-import@2
+npm i -D eslint-config-airbnb-base@15 eslint-plugin-prettier@4 eslint-config-prettier@8 eslint-plugin-fp@2 eslint-plugin-import@2
 
 # Install @dreipol/pandora
 npm i -D @dreipol/pandora
@@ -28,7 +28,7 @@ npm i -D @dreipol/pandora
 For Typescript support
 
 ```shell
-npm i -D typescript@4 @typescript-eslint/eslint-plugin@4 @typescript-eslint/parser@4
+npm i -D typescript@4 @typescript-eslint/eslint-plugin@5 @typescript-eslint/parser@5
 ```
 
 These plugins assume a `tsconfig.json` file in your project root ([Docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)).
@@ -77,7 +77,7 @@ module.exports = prettier.base
 For Vue Project we need to install one additional plugin `eslint-plugin-vue`
 
 ```shell
-npm i -D eslint-plugin-vue@7
+npm i -D eslint-plugin-vue@8
 ```
 
 ## Eslint Setup
@@ -162,7 +162,7 @@ module.exports = {
 Make sure to have Stylelint installed in your project before proceeding with the following steps
 
 ```shell
-npm i stylelint@13 stylelint-prettier@1 stylelint-config-prettier@8
+npm i stylelint@14 stylelint-prettier@2 stylelint-config-prettier@9
 ```
 
 ### Stylelint Basic Rules Config
@@ -183,7 +183,7 @@ Does your project use SCSS files? No problems... you can enable the pandora styl
 First you need to install the `stylelint-scss` dependency
 
 ```shell
-npm i stylelint-scss@3
+npm i stylelint-scss@4 postcss-scss@4 postcss@8
 ```
 
 You can then update your `.stylelintrc.js` file as follows
@@ -228,7 +228,7 @@ Do you care about the order of your css properties? In that case the pandora `st
 First install `stylelint-order`
 
 ```shell
-npm i stylelint-order@4
+npm i stylelint-order@5
 ```
 
 Then update your `.stylelintrc.js` file as follows
