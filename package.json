@@ -1,6 +1,6 @@
 {
   "name": "@dreipol/pandora",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Opinionated set of eslint and prettier rules",
   "main": "index.js",
   "engines": {
